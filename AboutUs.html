@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="AboutUs.css">
+</head>
+<body>
+  
+<nav class="navbar navbar-default navbar-fixed-top" id="menu">
+    
+    <div class="container-fluid" id="menu">
+    
+    <button type="button" class="navbar-toggle" 
+    data-toggle="collapse" 
+    data-target=".navbar-collapse" id="b">
+    <span class="sr-only">Menu-navigation</span>
+    <span class="icon-bar" id="bar"></span>
+    <span class="icon-bar" id="bar"></span>
+    <span class="icon-bar" id="bar"></span>
+    
+    </button>
+    
+    
+    <a class="navbar-brand" id="link" href="index.html">Optima</a>
+    
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right" id="menu-buttons">
+           <li id="button"><a href="AboutUs.html" id="link" class="active">O nas</a></li>
+           <li id="button"><a href="Offer.html" id="link">Oferta</a></li>
+           <li id="button"><a href="#" id="link">Do pobrania</a></li>
+           <li id="button"><a href="Contact.html" id="link">Kontakt</a></li>
+           <li id="button" class="dropdown"><a href="#" id="link" class="dropdown-toggle" data-toggle = "dropdown">
+           Zgłaszanie szkod
+           </a></li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+<div class="container-fluid">
+    <div id="header">
+        <h1>Zapraszamy</h1>
+        <p>To jest strona firmy ubiezpeczeniowej OPTIMA</p>
+    </div>
+    <div class="row" id="logo">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" id="logo-content"></div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row" id="opis">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" id="opis-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius odit eos aspernatur fugiat, recusandae adipisci consequatur a soluta, itaque tempora suscipit laboriosam voluptates quam sequi quo distinctio cum, incidunt eligendi!</div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row" id="propo">
+       <div class="col-md-1"></div>
+        <div class="col-md-5" id="offer"><a href="Offer.html" class="layer-link"><div id="offer-inner"><div class="layer"><p class="layer-text">Zobacz naszą ofertę</p></div></div></a></div>
+       <div class="col-md-5" id="download"><a href="#" class="layer-link"><div id="download-inner"><div class="layer"><p class="layer-text">Pobierz wnioski do uzupełnienia</p></div></div></a></div>
+       <div class="col-md-1"></div>
+    </div>
+    <div class="row" id="kontakt">
+       <div class="col-md-1"></div>
+       <div class="col-md-3" id="contact">
+           <p class="contact-parts">Tel. +48xxxxxxxxx</p>
+           <p class="contact-parts">maildooptima@gmail.com</p>
+           <p class="contact-parts">optimasite.org</p>
+           <br>
+           <br>
+           <br>
+           <br>
+           
+           <p class="contact-parts" id="addres">Przyjdź do nas: ul. Wiatraczna 2M, Słupsk</p>
+           
+       </div>
+       <div class="col-md-1" id="contact-map-wrapper"></div>
+       <div class="col-md-6" id="map">
+           <div id="map"></div>
+       </div>
+       <div class="col-md-1"></div>
+    </div>
+</div>
+ 
+ <div class="container-fluid">
+     <div class="row" id="footer">
+        <div class="col-sm-4">&copy; Code by Leon</div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>
+ </div>
+  
+  
+  <script>
+      function initMap() {
+        var uluru = {lat: 54.476825, lng: 17.004567};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBupwpbakXmTQpXpqhtx4qAPGao_oig1Vw&callback=initMap">
+    </script>
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

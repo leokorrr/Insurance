@@ -1,0 +1,154 @@
+body{
+     margin: 0 auto;  
+     font-family:Merriweather, Georgia, serif;
+}
+
+#menu{
+    background-color: #59407f;
+    
+    border-color: rgba(0, 0, 0, 0);
+    
+    box-shadow: 0px 1px 1px black;
+    
+}
+
+#link{
+    color: white;
+    transition: 0.7s;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 200%;
+}
+
+#menu-buttons{
+    padding-right: 10%;
+    
+}
+
+#1{
+    background-color: ;
+    width: 100vh;
+    height: 1oovw;
+}
+
+
+#button{
+    font-size: 70%;
+}
+
+#bar{
+    background-color: white;
+}
+
+#b{
+    border: none;
+    background-color: #59407f;
+}
+#b:hover{
+     background-color: rgb(98, 68, 142); 
+}
+
+li{
+    position: relative;
+    text-decoration: none;
+    color: #59407f; 
+}
+li:hover{
+    color:#59407f;
+}
+
+li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+    color: #59407f; 
+}
+
+li:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+    color:#59407f;
+}
+
+
+#welcome-part{
+    height: 90vh;
+    max-height: 800px;
+    background: url(img/hero-home.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: right;
+    position: relative;
+    
+}
+
+#welcome-text{
+    font-size: 250%;
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    margin-top: 38%;
+    padding-right: 3%;
+    margin-left: 60%;
+    width: 40%;
+    font-style: italic;
+    
+}
+
+#offer{
+    background-color: #59407f;
+    color: white;
+/*    height: 75vh;*/
+    padding: 8%;
+}
+
+.card{
+    height: 300px;
+    margin-top: 10px;
+    text-align: center;
+}
+.card-title{
+    font-size: 180%;
+}
+p{
+    font-size: 160%
+}
+
+span{
+    font-size: 800%;
+}
+
+#footer{
+    background-color: #373737;
+    color: white;
+    padding: 1% 0 1% 0;
+}
+
+@media screen and (max-width:992px)
+{
+    
+    #link{
+        font-size: 120%
+    }
+}
+
+@media screen and (max-width:576px)
+{
+    
+    #link{
+        font-size: 160%
+    }
+}
+
+

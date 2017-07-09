@@ -1,0 +1,281 @@
+/*menu and html document look*/
+body{
+     margin: 0 auto;  
+     font-family:Merriweather, Georgia, serif;
+}
+
+#menu{
+    background-color: #59407f;
+    
+    border-color: rgba(0, 0, 0, 0);
+    
+    box-shadow: 0px 1px 1px black;
+    
+}
+
+#link{
+    color: white;
+    transition: 0.7s;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 200%;
+}
+
+#menu-buttons{
+    padding-right: 10%;
+    
+}
+
+#1{
+    background-color: ;
+    width: 100vh;
+    height: 1oovw;
+}
+
+#button{
+    font-size: 70%;
+}
+
+#bar{
+    background-color: white;
+}
+
+#b{
+    border: none;
+    background-color: #59407f;
+}
+#b:hover{
+     background-color: rgb(98, 68, 142); 
+}
+
+li{
+    position: relative;
+    text-decoration: none;
+    color: #59407f; 
+}
+li:hover{
+    color:#59407f;
+}
+li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+    color: #59407f; 
+}
+li:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+    color:#59407f;
+}
+
+#footer{
+    background-color: #373737;
+    color: white;
+    padding: 1% 0 1% 0;
+    margin-bottom: -3%;
+}
+
+.active{
+    background-color: #6c4a9f;
+}
+
+/*menu size*/
+@media screen and (max-width:992px)
+{
+    
+    #link{
+        font-size: 120%
+    }
+}
+@media screen and (max-width:576px)
+{
+    
+    #link{
+        font-size: 160%
+    }
+}
+
+
+#title{
+    text-align: center;
+}
+
+
+/*cards and animation*/
+
+#cards{
+    margin-bottom: 3%
+}
+
+.card{
+    height: 50vh;
+    max-height: 700px;
+    margin-top: 5%;
+    margin-left: 6%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.front-side{
+    text-align: center;
+    font-size: 200%;
+    box-shadow: 0px 0px 3px grey;
+    
+}
+
+.back-side{
+    text-align: center;
+    font-size: 150%;
+    box-shadow: 0px 0px 3px grey;
+    padding: 25% 0%;
+}
+
+#daniel-mail{
+    font-size: 70%;
+}
+
+img{
+    margin-top: 15%;
+}
+
+
+.card>.front-side{
+    position: absolute;
+    
+    -webkit-transform: perspective(600px)rotateY(0deg);
+    transform: perspective(600px)rotateY(0deg);
+    
+    background: white; width: 100%; height: 100%; border-radius: 7px;
+    
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    transition: -webkit-transform .5s linear 0s;
+}
+
+.card>.back-side{
+    position: absolute;
+    
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    
+    background:  white;width: 100%; height: 100%; border-radius: 7px;
+    
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    transition: -webkit-transform .5s linear 0s;
+}
+
+.card:hover>.front-side{
+    transform: perspective(600px) rotateY(-180deg);
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover>.back-side{
+    transform: perspective(600px) rotateY(0deg);
+    -webkit-transform: perspective(600px) rotateY(0deg);
+}
+
+
+/*contact + map*/
+
+#place{
+    height: 70vh;
+    max-height: 800px;
+    box-shadow: 0px 0px 2px grey;
+    
+    margin-bottom: 1%;
+}
+
+#map{
+    height: 70vh;
+    max-height: 800px;
+}
+
+#addres{
+    font-size: 200%;
+    padding: 7% 4%;
+    text-decoration: underline;
+}
+
+#mob-cards{
+    display: none;
+}
+s
+
+@media screen and (max-width: 992px){
+    
+    .back-side{
+        font-size: 120%;
+    }
+    
+    .card{
+        margin-left: 5%;
+    }
+    
+    #addres{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){   
+    #cards{
+        display: none;
+    }
+    
+    #mob-cards{
+        display: block;
+        text-align: center;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .mob-card{
+        margin-bottom: 1%;
+        box-shadow: 0px 0px 3px grey;
+    }
+    img{
+        margin-top: 5%
+        
+    }
+    .mail{
+        padding-bottom: 10%;
+    }
+    
+    .name{
+        font-weight: bold;
+        font-size: 180%
+    }
+    
+    p{
+        font-size: 150%
+    }
+}
+
+@media screen and (max-width: 576px){
+    name{
+        font-weight: bold;
+        font-size: 150%
+    }
+    
+    p{
+        font-size: 120%
+    }
+    
+    #daniel-mail{
+        font-size: 90%;
+    }
+}
+
+
+

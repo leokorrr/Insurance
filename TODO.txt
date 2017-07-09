@@ -1,0 +1,9 @@
+http://www.asemo.pl/index.php
+
+
+- Do pobrania 
+- Zglaszanie szkod
+
+footer{
+ впихнуть значок копирайта дизайна изображений
+}

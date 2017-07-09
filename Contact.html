@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+  
+<nav class="navbar navbar-default navbar-fixed-top" id="menu">
+    
+    <div class="container-fluid" id="menu">
+    
+    <button type="button" class="navbar-toggle" 
+    data-toggle="collapse" 
+    data-target=".navbar-collapse" id="b">
+    <span class="sr-only">Menu-navigation</span>
+    <span class="icon-bar" id="bar"></span>
+    <span class="icon-bar" id="bar"></span>
+    <span class="icon-bar" id="bar"></span>
+    
+    </button>
+    
+    
+    <a class="navbar-brand" id="link" href="index.html">Optima</a>
+    
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right" id="menu-buttons">
+           <li id="button"><a href="AboutUs.html" id="link" >O nas</a></li>
+           <li id="button"><a href="Offer.html" id="link">Oferta</a></li>
+           <li id="button"><a href="#" id="link">Do pobrania</a></li>
+           <li id="button"><a href="Contact.html" id="link" class="active">Kontakt</a></li>
+           <li id="button" class="dropdown"><a href="#" id="link" class="dropdown-toggle" data-toggle = "dropdown">
+           Zgłaszanie szkod
+           </a></li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+<div class="container">
+    <div class="row" id="title">
+        <h1>Zostań w kontakćie:</h1>
+    </div>
+    
+    <div class="row" id="cards">
+        <div class="col-sm-3 card" id="Daniel">
+          <div class="front-side">
+          <div class="image"><img src="img/Daniel.jpg" alt="asset" class="img-circle" width="140" ></div>
+           <p class="name">
+               Daniel
+           </p>
+           <p class="surname">
+               Składanowski
+           </p>
+          </div>
+          
+          <div class="back-side">
+             <p>tel. 59 8231016</p>
+             <p>fax. 59 7276151</p>
+             <p>kom. 793-453-456</p>
+             <p class="mail" id="daniel-mail">daniel.skladanowski@gmail.com</p>
+              
+          </div>  
+            
+        </div>
+        
+        <div class="col-sm-3 card" id="Ryszard">
+          <div class="front-side">
+          <div class="image"><img src="img/Ryszard.jpg" alt="asset" class="img-circle" width="140"></div>
+           <p class="name">
+               Ryszard
+           </p>
+           <p class="surname">
+               Kłak
+           </p>
+          </div>
+          
+          <div class="back-side">
+              <p>tel. 59 8231016</p>
+              <p>fax. 59 7276151</p>
+              <p>kom. 607-072-864</p>
+              <p class="mail">klak.ryszard@gmail.com</p>
+          </div>
+          
+        </div>
+        
+        <div class="col-sm-3 card" id="Hanna">
+          <div class="front-side">
+          <div class="image"><img src="img/hanna.jpg" alt="asset" class="img-circle" width="140" ></div>
+           <p class="name">
+               Hanna
+           </p>
+           <p class="surname">
+               Kłak
+           </p>
+          </div>
+          
+          <div class="back-side">
+              <p>tel. 59 8231016</p>
+              <p>fax. 59 7276151</p>
+              <p>kom. 607-910-436</p>
+              <p class="mail">hanna.klak@gmail.com</p>
+          </div>
+            
+        </div>
+    </div>
+    
+    <div class="row" id="mob-cards">
+        <div class="col-md-4 mob-card">
+            <div class="image"><img src="img/Daniel.jpg" alt="asset" class="img-circle" width="140" ></div>
+            <p class="name">Daniel Składanowski</p>
+            <p>tel. 59 8231016</p>
+            <p>fax. 59 7276151</p>
+            <p>kom. 793-453-456</p>
+            <p class="mail" id="daniel-mail">daniel.skladanowski@gmail.com</p>
+        </div>
+        <div class="col-md-4 mob-card">
+            <div class="image"><img src="img/Ryszard.jpg" alt="asset" class="img-circle" width="140" ></div>
+            <p class="name">Ryszard Kłak</p>
+            <p>tel. 59 8231016</p>
+            <p>fax. 59 7276151</p>
+            <p>kom. 607-072-864</p>
+            <p class="mail">klak.ryszard@gmail.com</p>
+        </div>
+        <div class="col-md-4 mob-card">
+            <div class="image">
+                <img src="img/hanna.jpg" alt="asset" class="img-circle" width="140" >
+            </div>
+            <p class="name">Hanna Kłak</p>
+            <p>tel. 59 8231016</p>
+            <p>fax. 59 7276151</p>
+            <p>kom. 607-910-436</p>
+            <p class="mail">hanna.klak@gmail.com</p>
+        </div>
+    </div>
+    
+    <div class="row" id="place">
+        <div class="col-md-8" id="map"></div>
+        <div class="col-md-4" id="addres">ul. Wiatraczna 2M, Słupsk</div>
+    </div>
+</div>
+   
+<div class="container-fluid">
+     <div class="row" id="footer">
+        <div class="col-sm-4">&copy; Code by Leon</div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>
+ </div>
+    
+   
+
+<script>
+      function initMap() {
+        var uluru = {lat: 54.476825, lng: 17.004567};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+</script>
+    
+    
+    
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBupwpbakXmTQpXpqhtx4qAPGao_oig1Vw&callback=initMap"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
