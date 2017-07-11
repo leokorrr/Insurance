@@ -1,7 +1,12 @@
 /*menu and html document look*/
 body{
      margin: 0 auto;  
-     font-family:Merriweather, Georgia, serif;
+     font-family: advent-pro;
+}
+
+@font-face{
+    font-family: advent-pro;
+    src: url(fonts/Arsenal-Regular.otf);
 }
 
 #menu{

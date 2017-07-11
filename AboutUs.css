@@ -1,7 +1,12 @@
 /*menu and html document look*/
 body{
      margin: 0 auto;  
-     font-family:Merriweather, Georgia, serif;
+     font-family: advent-pro;
+}
+
+@font-face{
+    font-family: advent-pro;
+    src: url(fonts/Arsenal-Regular.otf);
 }
 
 #menu{
@@ -101,14 +106,25 @@ li:hover:before {
 }
 
 #logo-content{
-    height: 50vh;
-    max-height: 600px;
-   background: url(img/logo.jpg) no-repeat center center;
+     height: 70vh;
+    max-height: 800px;
+   background: url(img/about-us.jpeg) no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
+
+.title{
+    font-size: 250%;
+    text-shadow: 0px 0px 10px black;
+}
+
+
 
 #opis-content{
     height: 25vh;

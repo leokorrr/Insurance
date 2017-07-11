@@ -1,7 +1,12 @@
 /*menu and html document look*/
 body{
      margin: 0 auto;  
-     font-family:Merriweather, Georgia, serif;
+     font-family: advent-pro;
+}
+
+@font-face{
+    font-family: advent-pro;
+    src: url(fonts/Arsenal-Regular.otf);
 }
 
 #menu{
@@ -104,3 +109,43 @@ li:hover:before {
         font-size: 160%
     }
 }
+
+.row{
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.firm-name{
+    font-size: 120%;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+}
+
+#harm-text{
+    height: 70vh;
+    max-height: 800px;
+    background: url(img/szkoda.jpeg) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 300%;
+    text-shadow: 0px 0px 10px black;  
+}
+
+.box{
+    transition: 0.75s;
+    padding: 1% 1% 1% 1%;
+}
+.box:hover{
+    box-shadow: 0px 0px 8px #ccc7c7;
+    font-size: 130%;
+}
+
