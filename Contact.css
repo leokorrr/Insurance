@@ -142,7 +142,7 @@ li:hover:before {
 
 #background{
      height: 70vh;
-    max-height: 800px;
+    max-height: 450px;
    background: url(img/contact.jpeg) no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
@@ -161,8 +161,7 @@ li:hover:before {
 }
 
 .card{
-    height: 50vh;
-    max-height: 700px;
+    height: 300px;
     margin-top: 5%;
     margin-left: 6%;
     text-align: center;

@@ -128,8 +128,8 @@ li:hover:before {
 }
 
 #logo-content{
-     height: 70vh;
-    max-height: 800px;
+    height: 70vh;
+    max-height: 450px;
    background: url(img/about-us.jpeg) no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
