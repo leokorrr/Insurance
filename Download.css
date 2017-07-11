@@ -135,7 +135,7 @@ li:hover:before {
 
 #welcome{
     height: 70vh;
-    max-height: 450px;
+    max-height: 800px;
     background: url(img/download.jpeg) no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;

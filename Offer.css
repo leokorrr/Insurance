@@ -135,7 +135,7 @@ li:hover:before {
 
 #image{
     height: 70vh;
-    max-height: 450px;
+    max-height: 800px;
     background: url(img/contract.jpeg) no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;

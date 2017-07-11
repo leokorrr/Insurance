@@ -106,8 +106,8 @@ li:hover:before {
 }
 
 #welcome-part{
-    height: 80vh;
-    max-height: 450px;
+    height: 70vh;
+    max-height: 800px;
     background: url(img/mountain-2.jpeg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
